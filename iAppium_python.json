@@ -1,10 +1,10 @@
 {
     "desired_caps": {
         "platformName": "Android",
-        "deviceName": "<your device name>",
-        "udid": "<your device udid>",
+        "deviceName": "test",
+        "udid": "127.0.0.1:7555",
         "noReset": "false",
-        "automationName": "UiAutomator2",
+        "automationName": "UiAutomator1",
         "appPackage": "com.example.android.contactmanager",
         "appActivity": ".ContactManager"
     },

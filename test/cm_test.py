@@ -12,6 +12,7 @@ class IAppium(unittest.TestCase):
 
     def setUp(self):
         desired_caps = {}
+        print(config)
         appium_server_url = config['appium_server_url']
         desired_caps['platformName'] = config['desired_caps']['platformName']
         desired_caps['udid'] = config['desired_caps']['udid']
@@ -21,7 +22,7 @@ class IAppium(unittest.TestCase):
         desired_caps['automationName'] = config['desired_caps']['automationName']
         desired_caps['noReset'] = config['desired_caps']['noReset']
         desired_caps['app'] = f'{os.path.abspath(os.curdir)}/app/ContactManager.apk'
-
+        print(f'111111{os.path.abspath(os.curdir)}')
         self.driver = webdriver.Remote(appium_server_url, desired_caps)
 
     def tearDown(self):
